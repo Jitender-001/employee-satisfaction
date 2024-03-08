@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Satisfaction Form</title>
-    <link rel="stylesheet" href="/form/employee/style.css">
+    <link rel="stylesheet" href="/employee-satisfaction/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 <body>
@@ -12,7 +12,7 @@
         <div class="main-area">
 
             <div class="logo-img">
-                <img src="/form/employee/png" alt="logo image">
+                <img src="/employee-satisfaction/png" alt="logo image">
             </div>
             
             <div class="heading-main">
@@ -47,21 +47,83 @@
                         <input type="text" class="emp-details" id="employee-id">
                     </div>
 
-                    <div class="supervisor-rating">
-                        <span class="supervisor-text">
+                    <div class="rating">
+                        <span class="rating-text">
                             How would you rate your
                             supervisor's attitude towards
                             you and the rest of the team?
                         </span>
 
                         <div class="rating-btn">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
                         </div>
                     </div>
+
+                    <div class="rating">
+                        <span class="rating-text">
+                            How would you rate our HR managers' attitudes?
+                        </span>
+
+                        <div class="rating-btn">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown-options">
+                        <span class="rating-text">
+                            How satisfied are you with your team?
+                        </span>
+                        <div class="dropdown-details">
+                            <select>
+                                <option value="select">-select-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="team-mates">
+                        <span class="rating-text">
+                        <div class="radio-options">
+                            <span class="rating-text">
+                                Are your team mates helpful to each other?
+                            </span>
+                        <div class="radio-btn">
+                            <label for="yes">
+                                <input type="radio" name="radios" value="yes" id="yes">  Yes-totally
+                            </label>
+                            <label for="a-bit">
+                                <input type="radio" name="radios" value="a-bit" id="a-bit">  A bit
+                            </label>
+                            <label for="no">
+                                <input type="radio" name="radios" value="no" id="no">  No way  
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <span class="feedback-text">
+                            Do you have anything else you'd like us to know?
+                        </span>
+                        <textarea name="feedback" id="feedback" cols="68" rows="4"></textarea>
+                    </div>
+
+                    <div class="submit-btn">
+                        <button>Submit</button>
+                    </div>
+
         
                 </form>
                 
@@ -75,7 +137,7 @@
 
 
     </div>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="/employee-satisfaction/script.js"></script>
 
 </body>
 </html>
